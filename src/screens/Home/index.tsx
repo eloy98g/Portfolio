@@ -35,8 +35,8 @@ export default function Home() {
           <SectionTitle title="📝 Resume" />
           <Resume />
           <Divider height={42} />
-          {/* <SectionTitle title="🏄‍♂️ Time Line" /> */}
-          <SectionTitle title="📆 Time Line" />
+          <SectionTitle title="🏄‍♂️ Time Line" />
+          {/* <SectionTitle title="📆 Time Line" /> */}
           <TimeLine />
           <Divider height={92} />
         </ScrollView>

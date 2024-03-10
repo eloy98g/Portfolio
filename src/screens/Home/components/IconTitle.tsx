@@ -22,13 +22,9 @@ const IconTitle = ({ image, title, label, subtitle }: Props) => {
         <Divider width={20} />
         <View style={styles.column}>
           <Title text={title} />
-          {subtitle && (
-            <>
-              <Divider height={10} />
-              <Text text={subtitle} />
-            </>
-          )}
+          {subtitle && <Text text={subtitle} />}
         </View>
+        x
       </View>
       {label && <Label label={label} />}
     </View>
@@ -40,6 +36,8 @@ export default IconTitle;
 const styles = StyleSheet.create({
   container: {
     width: "100%",
+    flexDirection: "row",
+    alignItems: "center",
   },
   row: {
     flexDirection: "row",
@@ -49,11 +47,10 @@ const styles = StyleSheet.create({
   column: {
     alignItems: "flex-start",
   },
-
   image: {
-    width: 50,
-    height: 50,
-    borderRadius: 25,
+    width: 64,
+    height: 64,
+    borderRadius: 32,
     resizeMode: "cover",
   },
 });
