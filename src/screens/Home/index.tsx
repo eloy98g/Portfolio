@@ -11,6 +11,8 @@ import Hero from "./sections/Hero";
 // Theme
 import { LAPTOP } from "../../theme/breakPoints";
 import colors from "../../theme/colors";
+import Title from "../../components/common/Title";
+import SectionTitle from "./components/SectionTitle";
 
 export default function Home() {
   return (
@@ -20,6 +22,7 @@ export default function Home() {
         <ScrollView>
           <Divider height={92} />
           <Hero />
+          <SectionTitle title="👀 About" />
         </ScrollView>
       </View>
     </View>

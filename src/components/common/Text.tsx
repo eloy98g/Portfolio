@@ -18,7 +18,7 @@ export default Text;
 
 const styles = StyleSheet.create({
   text: {
-    fontFamily: family.normal,
+    fontFamily: family.light,
     color: colors.white,
     fontSize: 20,
   },
