@@ -1,14 +1,26 @@
 import React from "react";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
-import colors from "../../theme/colors";
+import { ScrollView, StyleSheet, View } from "react-native";
+
+// Components
+import Divider from "../../components/common/Divider";
 import Header from "./components/Header";
+
+// Sections
+import Hero from "./sections/Hero";
+
+// Theme
+import { LAPTOP } from "../../theme/breakPoints";
+import colors from "../../theme/colors";
 
 export default function Home() {
   return (
     <View style={styles.screen}>
       <Header />
       <View style={styles.scrollContainer}>
-        <ScrollView></ScrollView>
+        <ScrollView>
+          <Divider height={92} />
+          <Hero />
+        </ScrollView>
       </View>
     </View>
   );
@@ -22,9 +34,9 @@ const styles = StyleSheet.create({
     backgroundColor: colors.primary,
   },
   scrollContainer: {
-    width:"100%",
+    maxWidth: LAPTOP,
+    paddingHorizontal: 22,
+    width: "100%",
     flex: 1,
-    borderWidth: 1,
-    borderColor: "red",
   },
 });

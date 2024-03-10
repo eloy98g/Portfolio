@@ -27,15 +27,15 @@ const MediaContainer = () => {
   return (
     <View style={styles.wrapper}>
       <TouchableOpacity onPress={() => handleIcon("mail")}>
-        <Mail color={colors.white} size={24} />
+        <Mail color={colors.grey} size={24} />
       </TouchableOpacity>
       <Divider width={30} />
       <TouchableOpacity onPress={() => handleIcon("linkedin")}>
-        <Linkedin color={colors.white} size={24} />
+        <Linkedin color={colors.grey} size={24} />
       </TouchableOpacity>
       <Divider width={30} />
       <TouchableOpacity onPress={() => handleIcon("github")}>
-        <Github color={colors.white} size={24} />
+        <Github color={colors.grey} size={24} />
       </TouchableOpacity>
     </View>
   );
