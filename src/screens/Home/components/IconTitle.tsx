@@ -6,7 +6,6 @@ import Divider from "../../../components/common/Divider";
 import Label from "../../../components/common/Label";
 import Text from "../../../components/common/Text";
 import Title from "../../../components/common/Title";
-import colors from "../../../theme/colors";
 
 interface Props {
   title: string;
