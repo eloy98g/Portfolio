@@ -16,6 +16,7 @@ import Personal from "./sections/Personal";
 import Studies from "./sections/Studies";
 import Rio from "./sections/Rio";
 import Resume from "./sections/Resume";
+import TimeLine from "./sections/TimeLine";
 
 export default function Home() {
   return (
@@ -33,6 +34,10 @@ export default function Home() {
           <Rio />
           <SectionTitle title="📝 Resume" />
           <Resume />
+          <Divider height={42} />
+          {/* <SectionTitle title="🏄‍♂️ Time Line" /> */}
+          <SectionTitle title="📆 Time Line" />
+          <TimeLine />
           <Divider height={92} />
         </ScrollView>
       </View>

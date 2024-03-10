@@ -12,11 +12,11 @@ const ResumeItem = ({ data }) => {
     <View style={styles.container}>
       <IconTitle image={image} title={title} />
       <Divider height={12} />
-      {highlights.map((item) => (
-        <>
+      {highlights.map((item, index) => (
+        <React.Fragment key={index}>
           <Text text={"➤  " + item} />
           <Divider height={6} />
-        </>
+        </React.Fragment>
       ))}
     </View>
   );
