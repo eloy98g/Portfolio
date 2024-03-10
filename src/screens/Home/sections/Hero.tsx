@@ -22,7 +22,7 @@ const Hero = () => {
           <>
             <Text text="I am a " />
             <Text text="Frontend Developer " bold />
-            <Text text="specializing in the conception and implementation of contemporary and user-friendly digital experiences." />
+            <Text text="specializing in the creation and development of contemporary, user-friendly digital products." />
           </>
         }
       />
@@ -32,7 +32,7 @@ const Hero = () => {
           <>
             <Text text="With a background in " />
             <Text text="Computer Engineering " bold />
-            <Text text="I've always had a passion for product design" />
+            <Text text="I've always had a passion for product design." />
           </>
         }
       />
@@ -40,9 +40,15 @@ const Hero = () => {
       <Divider height={1} width="100%" color={colors.lightGrey} />
       <Divider height={15} />
       <View style={styles.languageWrapper}>
-        <Flag title="Spanish" flag={require("../../../assets/flags/spanish.png")} />
+        <Flag
+          title="Spanish"
+          flag={require("../../../assets/flags/spanish.png")}
+        />
         <Divider width={50} />
-        <Flag title="English" flag={require("../../../assets/flags/english.png")} />
+        <Flag
+          title="English"
+          flag={require("../../../assets/flags/english.png")}
+        />
       </View>
     </Section>
   );
@@ -55,6 +61,6 @@ const styles = StyleSheet.create({
     width: "100%",
     justifyContent: "center",
     alignItems: "center",
-    flexDirection:"row"
+    flexDirection: "row",
   },
 });

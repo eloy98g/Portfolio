@@ -11,8 +11,10 @@ import Hero from "./sections/Hero";
 // Theme
 import { LAPTOP } from "../../theme/breakPoints";
 import colors from "../../theme/colors";
-import Title from "../../components/common/Title";
 import SectionTitle from "./components/SectionTitle";
+import Personal from "./sections/Personal";
+import Studies from "./sections/Studies";
+import Rio from "./sections/Rio";
 
 export default function Home() {
   return (
@@ -23,6 +25,12 @@ export default function Home() {
           <Divider height={92} />
           <Hero />
           <SectionTitle title="👀 About" />
+          <Personal />
+          <Divider height={42} />
+          <Studies />
+          <Divider height={42} />
+          <Rio />
+          <Divider height={92} />
         </ScrollView>
       </View>
     </View>
@@ -40,6 +48,5 @@ const styles = StyleSheet.create({
     maxWidth: LAPTOP,
     paddingHorizontal: 22,
     width: "100%",
-    flex: 1,
   },
 });
