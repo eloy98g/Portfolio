@@ -15,6 +15,7 @@ import SectionTitle from "./components/SectionTitle";
 import Personal from "./sections/Personal";
 import Studies from "./sections/Studies";
 import Rio from "./sections/Rio";
+import Resume from "./sections/Resume";
 
 export default function Home() {
   return (
@@ -30,6 +31,8 @@ export default function Home() {
           <Studies />
           <Divider height={42} />
           <Rio />
+          <SectionTitle title="📝 Resume" />
+          <Resume />
           <Divider height={92} />
         </ScrollView>
       </View>
