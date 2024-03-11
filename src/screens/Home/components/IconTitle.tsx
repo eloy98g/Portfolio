@@ -23,6 +23,7 @@ const IconTitle = ({ image, title, label, subtitle }: Props) => {
   const showDivider = width < PHONE;
 
   const dividerWidth = showDivider ? 10 : 20
+  
   return (
     <View style={styles.container} dataSet={{ media: ids.container }}>
       <View style={styles.row}>
