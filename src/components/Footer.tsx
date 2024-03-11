@@ -1,19 +1,27 @@
 import React from "react";
 import StyleSheet from "react-native-media-query";
+import { View, useWindowDimensions, Linking } from "react-native";
 import { ExternalLink } from "lucide-react-native";
-import { View } from "react-native";
 
 // Components
 import TextButton from "./common/TextButton";
-import colors from "../theme/colors";
-import { useWindowDimensions } from "react-native";
-import { PHONE } from "../theme/breakPoints";
 import Divider from "./common/Divider";
+
+// Theme
+import colors from "../theme/colors";
+import { PHONE } from "../theme/breakPoints";
 
 const Footer = () => {
   const width = useWindowDimensions().width;
-  const openSourceHandler = () => {};
-  const reactNativeHandler = () => {};
+
+  const openSourceHandler = () => {
+    Linking.openURL("https://github.com/eloy98g/Portfolio");
+  };
+
+  const reactNativeHandler = () => {
+    Linking.openURL("https://reactnative.dev/");
+  };
+
   return (
     <View style={styles.container} dataSet={{ media: ids.container }}>
       <TextButton
