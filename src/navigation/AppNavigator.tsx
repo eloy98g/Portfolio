@@ -4,7 +4,6 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 // Screens
 import Home from "../screens/Home";
-import Project from "../screens/Project";
 
 const Stack = createStackNavigator();
 
@@ -18,10 +17,9 @@ const AppNavigator = () => {
           animationTypeForReplace: "pop",
           gestureEnabled: false,
         }}
-        initialRouteName="Home"
+        initialRouteName="Eloy Gómez"
       >
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Project" component={Project} />
+        <Stack.Screen name="Eloy Gómez" component={Home} />
       </Stack.Navigator>
     </NavigationContainer>
   );
