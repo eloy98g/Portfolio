@@ -14,6 +14,7 @@ import { PHONE } from "../../../theme/breakPoints";
 const Rio = () => {
   const width = useWindowDimensions().width;
   const showDivider = width < PHONE;
+
   return (
     <Section>
       <View style={styles.wrapper} dataSet={{ media: ids.wrapper }}>
@@ -40,6 +41,7 @@ const { ids, styles } = StyleSheet.create({
   wrapper: {
     flex: 1,
     flexDirection: "row",
+    alignItems:"center",
     [`@media (max-width: ${PHONE}px)`]: {
       flexDirection: "column",
       alignItems: "center",

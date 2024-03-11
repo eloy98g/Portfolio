@@ -26,8 +26,7 @@ const { ids, styles } = StyleSheet.create({
     fontSize: 36,
     [`@media (max-width: ${PHONE}px)`]: {
       textAlign: "center",
-      fontSize: 32,
-
+      fontSize: 26,
     },
   },
 });

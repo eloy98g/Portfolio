@@ -1,11 +1,15 @@
 import React from "react";
-import { StyleSheet, View, Image } from "react-native";
+import StyleSheet from "react-native-media-query";
+import { View, Image, useWindowDimensions } from "react-native";
 
 // Components
 import Divider from "../../../components/common/Divider";
 import Label from "../../../components/common/Label";
 import Text from "../../../components/common/Text";
 import Title from "../../../components/common/Title";
+
+// Theme
+import { PHONE } from "../../../theme/breakPoints";
 
 interface Props {
   title: string;
@@ -15,16 +19,21 @@ interface Props {
 }
 
 const IconTitle = ({ image, title, label, subtitle }: Props) => {
+  const width = useWindowDimensions().width;
+  const showDivider = width < PHONE;
+
+  const dividerWidth = showDivider ? 10 : 20
   return (
-    <View style={styles.container}>
+    <View style={styles.container} dataSet={{ media: ids.container }}>
       <View style={styles.row}>
         <Image style={styles.image} source={image} />
-        <Divider width={20} />
+        <Divider width={dividerWidth} />
         <View style={styles.column}>
           <Title text={title} />
           {subtitle && <Text text={subtitle} />}
         </View>
       </View>
+      {showDivider && <Divider height={12} />}
       {label && <Label label={label} />}
     </View>
   );
@@ -32,11 +41,15 @@ const IconTitle = ({ image, title, label, subtitle }: Props) => {
 
 export default IconTitle;
 
-const styles = StyleSheet.create({
+const { ids, styles } = StyleSheet.create({
   container: {
     width: "100%",
     flexDirection: "row",
     alignItems: "center",
+    [`@media (max-width: ${PHONE}px)`]: {
+      alignItems: "flex-start",
+      flexDirection: "column",
+    },
   },
   row: {
     flexDirection: "row",
