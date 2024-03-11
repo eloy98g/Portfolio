@@ -10,12 +10,17 @@ import { PHONE } from "../../theme/breakPoints";
 interface Props {
   text: string | React.JSX.Element;
   bold?: boolean;
+  justified?: boolean;
 }
 
-const Text = ({ text, bold = false }: Props) => (
+const Text = ({ text, bold = false, justified = true }: Props) => (
   <RNText
     dataSet={{ media: ids.text }}
-    style={[styles.text, bold && { fontFamily: family.bold }]}
+    style={[
+      styles.text,
+      bold && { fontFamily: family.bold },
+      !justified && { textAlign: "left" },
+    ]}
   >
     {text}
   </RNText>
@@ -27,9 +32,9 @@ const { ids, styles } = StyleSheet.create({
   text: {
     fontFamily: family.light,
     color: colors.white,
+    textAlign: "justify",
     fontSize: 20,
     [`@media (max-width: ${PHONE}px)`]: {
-      textAlign: "justify",
       fontSize: 16,
     },
   },

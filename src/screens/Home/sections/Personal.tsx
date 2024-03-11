@@ -1,6 +1,6 @@
 import React from "react";
 import StyleSheet from "react-native-media-query";
-import { View, Image, useWindowDimensions } from "react-native";
+import { View, Image } from "react-native";
 
 // Components
 import Title from "../../../components/common/Title";
@@ -11,28 +11,24 @@ import Divider from "../../../components/common/Divider";
 // Theme
 import { PHONE } from "../../../theme/breakPoints";
 
-const Personal = () => {
-  const width = useWindowDimensions().width;
-  const showDivider = width < PHONE;
-  return (
-    <Section>
-      <View style={styles.wrapper} dataSet={{ media: ids.wrapper }}>
-        <Image
-          style={styles.image}
-          source={require("../../../assets/images/profile.jpeg")}
-        />
-        <View style={styles.content} dataSet={{ media: ids.content }}>
-          {showDivider && <Divider height={12} />}
-          <Title text="Hello, world!" />
-          {showDivider && <Divider height={12} />}
-          <Text text="Ever since I was little, I have had an interest in computers and as a result I am largely self-taught." />
-          {showDivider && <Divider height={12} />}
-          <Text text="What I am passionate about, even more than developing useful software, is creating revolutionary tools that have a positive impact on user experiences." />
-        </View>
+const Personal = () => (
+  <Section>
+    <View style={styles.wrapper} dataSet={{ media: ids.wrapper }}>
+      <Image
+        style={styles.image}
+        source={require("../../../assets/images/profile.jpeg")}
+      />
+      <View style={styles.content} dataSet={{ media: ids.content }}>
+        <Divider height={12} />
+        <Title text="Hello, world!" />
+        <Divider height={12} />
+        <Text text="Ever since I was little, I've had an interest in computers and as a result I'm largely self-taught." />
+        <Divider height={12} />
+        <Text text="What I'm passionate about, even more than developing useful software, is creating revolutionary tools that have a positive impact on user experiences." />
       </View>
-    </Section>
-  );
-};
+    </View>
+  </Section>
+);
 
 export default Personal;
 
@@ -40,7 +36,7 @@ const { ids, styles } = StyleSheet.create({
   wrapper: {
     flex: 1,
     flexDirection: "row",
-    alignItems:"center",
+    alignItems: "center",
     [`@media (max-width: ${PHONE}px)`]: {
       flexDirection: "column",
       alignItems: "center",

@@ -6,7 +6,7 @@ export default [
     image: require("../../../assets/icons/gopick.png"),
     label: "2021 - Now",
     highlights: [
-      "Developed cross-platforms applications for mobile and web using React Native.",
+      "Developed cross-platforms applications for mobile and Web using React Native.",
       "Implemented complex designs and fluent animations.",
       "Worked hand-by-hand with design people when developing new features.",
       "Released mobile app to both App Store and Google Play.",
@@ -21,8 +21,8 @@ export default [
     label: "2021",
     subtitle: "Frontend Developer",
     highlights: [
-      "Designed complex systems with Figma.",
-      "Developed CMS web page using ReactJS and ChakraUI.",
+      "Designed component-driven systems with Figma.",
+      "Developed CMS Web page using ReactJS and ChakraUI.",
     ],
   },
   {
@@ -33,10 +33,10 @@ export default [
     subtitle: "Frontend Developer as intern",
     highlights: [
       "Used Firebase service to store user information.",
-      "Developed mobile app and CMS web page using Flutter.",
+      "Developed mobile app and CMS Web page using Flutter.",
       "Developed landing pages using ReactJS.",
       "Implemented real-time chat between users of the platform.",
-      "Used Github Actions to deploy web page to Firebase Hosting.",
+      "Used Github Actions to deploy Web pages to Firebase Hosting.",
     ],
   },
   {

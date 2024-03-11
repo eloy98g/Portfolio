@@ -20,7 +20,7 @@ const Hero = () => {
       <Text
         text={
           <>
-            <Text text="I am a " />
+            <Text text="I'm a " />
             <Text text="Frontend Developer " bold />
             <Text text="specializing in the creation and development of contemporary, user-friendly digital products." />
           </>

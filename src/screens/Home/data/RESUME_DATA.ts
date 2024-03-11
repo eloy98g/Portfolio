@@ -29,7 +29,7 @@ export default [
     title: "Firebase",
     image: require("../../../assets/icons/firebase.png"),
     highlights: [
-      "Implemented Firebase Authentication for web, android and iOS.",
+      "Implemented Firebase Authentication for Web, android and iOS.",
       "Integrated Firebase Messaging.",
       "Played with offline data persistence.",
     ],
@@ -39,7 +39,7 @@ export default [
     title: "Github",
     image: require("../../../assets/icons/github.webp"),
     highlights: [
-      "In-depth knowledge of version control and features Github provides.",
+      "In-depth knowledge of version control and features provided by Github.",
       "Organized development with Github Projects.",
       "Integrated Github Actions.",
     ],

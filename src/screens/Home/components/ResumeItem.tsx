@@ -19,7 +19,7 @@ const ResumeItem = ({ data }) => {
       <Divider height={12} />
       {highlights.map((item, index) => (
         <React.Fragment key={index}>
-          <Text text={"➤  " + item} />
+          <Text text={"➤  " + item} justified={false}/>
           <Divider height={6} />
         </React.Fragment>
       ))}
