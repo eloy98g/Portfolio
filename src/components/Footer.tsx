@@ -47,7 +47,7 @@ const { ids, styles } = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    "@media (max-width: 768px)": {
+    [`@media (max-width: ${PHONE}px)`]: {
       flexDirection: "column",
       justifyContent: "space-between",
       alignItems: "center",
