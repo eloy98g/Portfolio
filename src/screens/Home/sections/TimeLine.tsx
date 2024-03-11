@@ -13,8 +13,8 @@ const TimeLine = () => {
   return (
     <Section>
       {TIMELINE_DATA.map((data, index) => (
-        <>
-          <ResumeItem key={data.gid} data={data} />
+        <React.Fragment key={data.gid}>
+          <ResumeItem  data={data} />
           {index < TIMELINE_DATA.length - 1 && (
             <>
               <Divider height={15} />
@@ -22,7 +22,7 @@ const TimeLine = () => {
               <Divider height={15} />
             </>
           )}
-        </>
+        </React.Fragment>
       ))}
     </Section>
   );

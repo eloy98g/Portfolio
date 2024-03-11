@@ -3,16 +3,21 @@ import { StyleSheet, View } from "react-native";
 
 // Components
 import MediaContainer from "./MediaContainer";
+import ScrollsToWrapper from "./ScrollsToWrapper";
 
 // Theme
 import { LAPTOP } from "../../../theme/breakPoints";
 import colors from "../../../theme/colors";
 
-const Header = () => {
+const Header = ({ onAbout, onResume, onTimeLine }) => {
   return (
     <View style={styles.container}>
       <View style={styles.content}>
-        <View style={styles.wrapper}></View>
+        <ScrollsToWrapper
+          onAbout={onAbout}
+          onResume={onResume}
+          onTimeLine={onTimeLine}
+        />
         <MediaContainer />
       </View>
     </View>
@@ -29,7 +34,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 0,
     alignItems: "center",
-    boxShadow: "3px 3px 3px rgba(0,0,0,0,4)"
+    boxShadow: "3px 3px 3px rgba(0,0,0,0,4)",
   },
   content: {
     width: "100%",
@@ -39,9 +44,5 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     paddingHorizontal: 22,
-  },
-  wrapper: {
-    alignItems: "center",
-    flexDirection: "row",
   },
 });
