@@ -8,7 +8,7 @@ export default [
       "Integrated payment platforms, Apple Pay and Google Pay.",
       "Extensive use of packages for specific functionalities.",
       "Extensive knowledge of state management tools as Redux or MobX",
-      "Realized complex designs and fluent animations.",
+      "Realized complex and responsive designs.",
       "Worked with local and push notifications on both iOS and Android.",
     ],
   },
