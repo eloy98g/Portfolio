@@ -24,7 +24,6 @@ const IconTitle = ({ image, title, label, subtitle }: Props) => {
           <Title text={title} />
           {subtitle && <Text text={subtitle} />}
         </View>
-        x
       </View>
       {label && <Label label={label} />}
     </View>

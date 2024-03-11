@@ -26,12 +26,14 @@ export default function Home() {
         <ScrollView>
           <Divider height={92} />
           <Hero />
+          <Divider height={42} />
           <SectionTitle title="👀 About" />
           <Personal />
           <Divider height={42} />
           <Studies />
           <Divider height={42} />
           <Rio />
+          <Divider height={42} />
           <SectionTitle title="📝 Resume" />
           <Resume />
           <Divider height={42} />

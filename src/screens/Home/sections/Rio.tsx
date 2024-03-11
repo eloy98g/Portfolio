@@ -14,8 +14,8 @@ const Rio = () => {
         />
         <View style={styles.content}>
           <Title text="The definitive debugging tool" />
-          <Text text="We all have bad days like when that package automatically upgrades and everything just explodes." />
-          <Text text="But the tables have shifted since Rio appeared and, even if he doesn't understand what i'm saying, he always get it right by helping me to find the mistake!" />
+          <Text text="We all have bad days, like when that package automatically upgrades and everything just explodes." />
+          <Text text="But the tables have turned since Rio arrived in my life and, even if he doesn't understand what I'm saying, he always gets it right and helps me find the mistake!" />
         </View>
       </View>
     </Section>
