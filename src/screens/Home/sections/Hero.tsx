@@ -3,10 +3,10 @@ import { StyleSheet, View } from "react-native";
 import Divider from "../../../components/common/Divider";
 
 // Components
-import Title from "../../../components/common/Title";
 import Text from "../../../components/common/Text";
-import Section from "../components/Section";
+import Title from "../../../components/common/Title";
 import Flag from "../components/Flag";
+import Section from "../components/Section";
 
 // Theme
 import colors from "../../../theme/colors";
@@ -21,7 +21,7 @@ const Hero = () => {
         text={
           <>
             <Text text="I'm a " />
-            <Text text="Frontend Developer " bold />
+            <Text text="Software Engineer " bold />
             <Text text="specializing in the creation and development of contemporary, user-friendly digital products." />
           </>
         }
