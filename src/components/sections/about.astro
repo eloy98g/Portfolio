@@ -11,9 +11,11 @@ import Uco from "../../../public/images/uco.png";
 >
 	<h1 class="text-4xl font-extrabold">👀 About</h1>
 	<div
-		class="rounded-2xl bg-secondary p-md flex flex-row items-stretch justify-center gap-md font-thin w-full"
+		class="rounded-2xl bg-secondary p-md flex flex-col sm:flex-row item-center sm:items-stretch justify-center gap-md font-thin w-full"
 	>
-		<div class="flex w-48 rounded-xl overflow-hidden items-center">
+		<div
+			class="flex w-full sm:w-48 rounded-xl overflow-hidden justify-center items-center"
+		>
 			<Image
 				src={Profile}
 				alt="Profile picture"
@@ -21,7 +23,9 @@ import Uco from "../../../public/images/uco.png";
 			/>
 		</div>
 		<div class="flex flex-1 flex-col gap-sm">
-			<h1 class="text-4xl font-extrabold">Hello, world!</h1>
+			<h1 class="text-4xl font-extrabold text-center sm:text-left">
+				Hello, world!
+			</h1>
 			<p class="text-xl">
 				Ever since I was little, I've had an interest in computers and as a
 				result I'm largely self-taught.
@@ -34,14 +38,18 @@ import Uco from "../../../public/images/uco.png";
 		</div>
 	</div>
 	<div
-		class="rounded-2xl bg-secondary p-md flex flex-row items-stretch justify-center gap-md font-thin w-full"
+		class="rounded-2xl bg-secondary p-md flex flex-col sm:flex-row item-center sm:items-stretch justify-center gap-md font-thin w-full"
 	>
-		<div class="flex w-48 rounded-xl overflow-hidden items-center">
+		<div
+			class="flex w-full sm:w-48 rounded-xl overflow-hidden justify-center items-center"
+		>
 			<Image src={Uco} alt="UCO logo" class="w-48 h-52" />
 		</div>
 
 		<div class="flex flex-1 flex-col gap-sm">
-			<h1 class="text-4xl font-extrabold">Where it all began</h1>
+			<h1 class="text-4xl font-extrabold text-center sm:text-left">
+				Where it all began
+			</h1>
 			<p class="text-xl">
 				In 2016, what had been a hobby for years became my career, and my
 				adventure into the world of computer engineering began.
@@ -55,13 +63,17 @@ import Uco from "../../../public/images/uco.png";
 		</div>
 	</div>
 	<div
-		class="rounded-2xl bg-secondary p-md flex flex-row items-stretch justify-center gap-md font-thin w-full"
+		class="rounded-2xl bg-secondary p-md flex flex-col sm:flex-row item-center sm:items-stretch justify-center gap-md font-thin w-full"
 	>
-		<div class="flex w-48 rounded-xl overflow-hidden items-center">
+		<div
+			class="flex w-full sm:w-48 rounded-xl overflow-hidden justify-center items-center"
+		>
 			<Image src={Rio} alt="UCO logo" class="size-48 rounded-xl object-cover" />
 		</div>
 		<div class="flex flex-1 flex-col gap-sm">
-			<h1 class="text-4xl font-extrabold">The definitive debugging tool</h1>
+			<h1 class="text-4xl font-extrabold text-center sm:text-left">
+				The definitive debugging tool
+			</h1>
 			<p class="text-xl">
 				We all have bad days, like when that package automatically upgrades and
 				everything just explodes.
