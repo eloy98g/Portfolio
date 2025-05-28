@@ -1,0 +1,76 @@
+---
+import { Image } from "astro:assets";
+import Profile from "../../../public/images/profile.jpeg";
+import Rio from "../../../public/images/rio.jpeg";
+import Uco from "../../../public/images/uco.png";
+---
+
+<section
+	id="#about"
+	class="flex flex-col items-center justify-center gap-xl py-md"
+>
+	<h1 class="text-4xl font-extrabold">👀 About</h1>
+	<div
+		class="rounded-2xl bg-secondary p-md flex flex-row items-stretch justify-center gap-md font-thin w-full"
+	>
+		<div class="flex w-48 rounded-xl overflow-hidden items-center">
+			<Image
+				src={Profile}
+				alt="Profile picture"
+				class="size-48 rounded-xl object-cover"
+			/>
+		</div>
+		<div class="flex flex-1 flex-col gap-sm">
+			<h1 class="text-4xl font-extrabold">Hello, world!</h1>
+			<p class="text-xl">
+				Ever since I was little, I've had an interest in computers and as a
+				result I'm largely self-taught.
+			</p>
+			<p class="text-xl">
+				What I'm passionate about, even more than developing useful software, is
+				creating revolutionary tools that have a positive impact on user
+				experiences.
+			</p>
+		</div>
+	</div>
+	<div
+		class="rounded-2xl bg-secondary p-md flex flex-row items-stretch justify-center gap-md font-thin w-full"
+	>
+		<div class="flex w-48 rounded-xl overflow-hidden items-center">
+			<Image src={Uco} alt="UCO logo" class="w-48 h-52" />
+		</div>
+
+		<div class="flex flex-1 flex-col gap-sm">
+			<h1 class="text-4xl font-extrabold">Where it all began</h1>
+			<p class="text-xl">
+				In 2016, what had been a hobby for years became my career, and my
+				adventure into the world of computer engineering began.
+			</p>
+			<p class="text-xl">
+				During my studies in Córdoba University, I met wonderful people and I
+				was immersed in everything related to system administration, software
+				engineering, databases... but most importantly, I found my true
+				vocation: <strong> software development</strong>.
+			</p>
+		</div>
+	</div>
+	<div
+		class="rounded-2xl bg-secondary p-md flex flex-row items-stretch justify-center gap-md font-thin w-full"
+	>
+		<div class="flex w-48 rounded-xl overflow-hidden items-center">
+			<Image src={Rio} alt="UCO logo" class="size-48 rounded-xl object-cover" />
+		</div>
+		<div class="flex flex-1 flex-col gap-sm">
+			<h1 class="text-4xl font-extrabold">The definitive debugging tool</h1>
+			<p class="text-xl">
+				We all have bad days, like when that package automatically upgrades and
+				everything just explodes.
+			</p>
+			<p class="text-xl">
+				But the tables have turned since Rio arrived in my life and, even if he
+				doesn't understand what I'm saying, he always gets it right and helps me
+				find the mistake!
+			</p>
+		</div>
+	</div>
+</section>

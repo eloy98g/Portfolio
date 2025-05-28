@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+import englishFlag from "../../../public/flags/english.png";
+import spanishFlag from "../../../public/flags/spanish.png";
+// TODO: PNG TO WEBP
+---
+
+<section class="py-md">
+	<div
+		class="rounded-2xl bg-secondary p-md flex flex-col items-left justify-center gap-md font-thin"
+	>
+		<div class="flex-col gap-sm flex">
+			<h1 class="text-4xl font-extrabold">Greetings! 👋</h1>
+			<h1 class="text-4xl font-extrabold">I'm Eloy Gómez</h1>
+		</div>
+
+		<p class="text-xl">
+			I'm a <strong>Software Engineer</strong> specializing in the creation and development
+			of contemporary, user-friendly digital products.
+		</p>
+		<p class="text-xl">
+			With a background in <strong>Computer Engineering</strong> I've always had
+			a passion for product design.
+		</p>
+		<div class="w-full h-[1px] bg-light-grey"></div>
+		<div class="flex flex-row justify-center items-center gap-lg">
+			<div class="flex flex-row gap-sm justify-center items-center">
+				<div
+					class="rounded-full size-12 overflow-hidden border-4 border-light-grey"
+				>
+					<Image src={spanishFlag} alt="Spanish flag" class="size-full" />
+				</div>
+				<p class="text-xl">Spanish</p>
+			</div>
+			<div class="flex flex-row gap-sm justify-center items-center">
+				<div
+					class="rounded-full size-12 overflow-hidden border-4 border-light-grey"
+				>
+					<Image src={englishFlag} alt="Spanish flag" class="size-full" />
+				</div>
+				<p class="text-xl">Spanish</p>
+			</div>
+		</div>
+	</div>
+</section>

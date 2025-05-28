@@ -1,0 +1,41 @@
+---
+import { FiGithub, FiLinkedin } from "react-icons/fi";
+import { MdOutlineMail } from "react-icons/md";
+---
+
+<header
+	class="flex flex-1 w-full justify-center items-center fixed top-0 left-0 right-0 z-50 bg-primary"
+>
+	<nav
+		class="flex max-w-screen-xl w-full items-center justify-between px-md py-md text-white"
+	>
+		<ul class="flex space-x-sm text-xl">
+			<li><a href="#" class="hover:underline">About</a></li>
+			<li><a href="#about" class="hover:underline">Resume</a></li>
+			<li><a href="#contact" class="hover:underline">Timeline</a></li>
+		</ul>
+		<ul class="flex space-x-md text-xl">
+			<li>
+				<a
+					href="https://github.com/eloy98g"
+					class="hover:underline"
+					target="_blank"><FiGithub size={24} /></a
+				>
+			</li>
+			<li>
+				<a
+					href="https://www.linkedin.com/in/eloy-gomez-garcia-464125201/"
+					target="_blank"
+					class="hover:underline"><FiLinkedin size={24} /></a
+				>
+			</li>
+			<li>
+				<a
+					href="mailto:eloygomez.contact@gmail.com"
+					class="hover:underline"
+					target="_blank"><MdOutlineMail size={24} /></a
+				>
+			</li>
+		</ul>
+	</nav>
+</header>
