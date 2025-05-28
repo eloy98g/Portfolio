@@ -1,0 +1,14 @@
+{
+	"gid": 2,
+	"title": "Clapfy",
+	"label": "2020 - 2021",
+	"image": "",
+	"subtitle": "Frontend Developer as intern",
+	"highlights": [
+		"Used Firebase service to store user information.",
+		"Developed mobile app and CMS Web page using Flutter.",
+		"Developed landing pages using ReactJS.",
+		"Implemented real-time chat between users of the platform.",
+		"Used Github Actions to deploy Web pages to Firebase Hosting."
+	]
+}

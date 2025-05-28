@@ -1,0 +1,11 @@
+{
+	"gid": 3,
+	"title": "Labora",
+	"image": "",
+	"label": "2021",
+	"subtitle": "Frontend Developer",
+	"highlights": [
+		"Designed component-driven systems with Figma.",
+		"Developed CMS Web page using ReactJS and ChakraUI."
+	]
+}
