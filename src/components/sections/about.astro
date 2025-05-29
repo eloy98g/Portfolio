@@ -1,14 +1,11 @@
 ---
 import { Image } from "astro:assets";
-import Profile from "../../../public/images/profile.jpeg";
-import Rio from "../../../public/images/rio.jpeg";
-import Uco from "../../../public/images/uco.png";
+import Profile from "../../../public/images/profile.webp";
+import Rio from "../../../public/images/rio.webp";
+import Uco from "../../../public/images/uco.webp";
 ---
 
-<section
-	id="#about"
-	class="flex flex-col items-center justify-center gap-xl py-md"
->
+<section id="about" class="flex flex-col items-center justify-center gap-xl">
 	<h1 class="text-4xl font-extrabold">👀 About</h1>
 	<div
 		class="rounded-2xl bg-secondary p-md flex flex-col sm:flex-row item-center sm:items-stretch justify-center gap-md font-thin w-full"
@@ -23,14 +20,14 @@ import Uco from "../../../public/images/uco.png";
 			/>
 		</div>
 		<div class="flex flex-1 flex-col gap-sm">
-			<h1 class="text-4xl font-extrabold text-center sm:text-left">
+			<h1 class="text-xl sm:text-4xl font-extrabold text-center sm:text-left">
 				Hello, world!
 			</h1>
-			<p class="text-xl">
+			<p class="text-lg sm:text-xl">
 				Ever since I was little, I've had an interest in computers and as a
 				result I'm largely self-taught.
 			</p>
-			<p class="text-xl">
+			<p class="text-lg sm:text-xl">
 				What I'm passionate about, even more than developing useful software, is
 				creating revolutionary tools that have a positive impact on user
 				experiences.
@@ -47,14 +44,14 @@ import Uco from "../../../public/images/uco.png";
 		</div>
 
 		<div class="flex flex-1 flex-col gap-sm">
-			<h1 class="text-4xl font-extrabold text-center sm:text-left">
+			<h1 class="text-xl sm:text-4xl font-extrabold text-center sm:text-left">
 				Where it all began
 			</h1>
-			<p class="text-xl">
+			<p class="text-lg sm:text-xl">
 				In 2016, what had been a hobby for years became my career, and my
 				adventure into the world of computer engineering began.
 			</p>
-			<p class="text-xl">
+			<p class="text-lg sm:text-xl">
 				During my studies in Córdoba University, I met wonderful people and I
 				was immersed in everything related to system administration, software
 				engineering, databases... but most importantly, I found my true
@@ -71,14 +68,14 @@ import Uco from "../../../public/images/uco.png";
 			<Image src={Rio} alt="UCO logo" class="size-48 rounded-xl object-cover" />
 		</div>
 		<div class="flex flex-1 flex-col gap-sm">
-			<h1 class="text-4xl font-extrabold text-center sm:text-left">
+			<h1 class="text-xl sm:text-4xl font-extrabold text-center sm:text-left">
 				The definitive debugging tool
 			</h1>
-			<p class="text-xl">
+			<p class="text-lg sm:text-xl">
 				We all have bad days, like when that package automatically upgrades and
 				everything just explodes.
 			</p>
-			<p class="text-xl">
+			<p class="text-lg sm:text-xl">
 				But the tables have turned since Rio arrived in my life and, even if he
 				doesn't understand what I'm saying, he always gets it right and helps me
 				find the mistake!

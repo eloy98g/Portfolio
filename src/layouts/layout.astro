@@ -1,7 +1,7 @@
 ---
 import { ClientRouter } from "astro:transitions";
-import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
+import Header from "../components/header.astro";
 
 interface Props {
 	title: string;
@@ -28,8 +28,8 @@ const { title } = Astro.props;
 	</head>
 	<body class="flex-1 flex-col">
 		<Header />
-		<div class="flex pt-2xl w-full flex-1 justify-center items-center">
-			<main class="flex-1 flex max-w-screen-xl px-md gap-xl flex-col">
+		<div class="flex pt-3xl w-full flex-1 justify-center items-center">
+			<main class="flex-1 flex max-w-screen-xl px-md flex-col gap-3xl">
 				<slot />
 			</main>
 		</div>

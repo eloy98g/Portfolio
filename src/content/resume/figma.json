@@ -1,12 +1,11 @@
 {
 	"gid": 2,
 	"title": "Figma",
-	"image": "./images/profile.jpeg",
+	"image": "./images/figma.webp",
 	"highlights": [
 		"Implemented complete design systems.",
-		"Worked inside proffesional-level projects.",
+		"Used on several professional & personal projects.",
 		"Made extensive use of components all around the project.",
-		"Realized complex designs and fluent animations.",
-		"Worked with local and push notifications on both iOS and Android."
+		"Created complex designs and smooth animations."
 	]
 }

@@ -2,7 +2,7 @@
 	"gid": 2,
 	"title": "Clapfy",
 	"label": "2020 - 2021",
-	"image": "",
+	"image": "./images/clapfy.webp",
 	"subtitle": "Frontend Developer as intern",
 	"highlights": [
 		"Used Firebase service to store user information.",

@@ -1,10 +1,10 @@
 {
 	"gid": 4,
-	"title": "Github",
-	"image": "",
+	"title": "Version control",
+	"image": "./images/git.webp",
 	"highlights": [
-		"In-depth knowledge of version control and features provided by Github.",
-		"Organized development with Github Projects.",
+		"In-depth knowledge of version control flows",
+		"Used various version control platforms.",
 		"Integrated Github Actions."
 	]
 }

@@ -1,7 +1,7 @@
 {
 	"gid": 1,
 	"title": "React Native",
-	"image": "",
+	"image": "./images/reactNative.webp",
 	"highlights": [
 		"Implemented complex navigation systems, with deep linking support.",
 		"Integrated payment platforms, Apple Pay and Google Pay.",

@@ -2,7 +2,7 @@
 	"gid": 4,
 	"title": "Gopick",
 	"subtitle": "Software Developer",
-	"image": "",
+	"image": "./images/gopick.webp",
 	"label": "2021 - 2024",
 	"highlights": [
 		"Developed cross-platforms applications for mobile and Web using React Native.",

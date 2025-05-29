@@ -1,12 +1,11 @@
 {
-	"gid": 2,
-	"title": "Figma",
-	"image": "",
+	"gid": 3,
+	"title": "Firebase",
+	"image": "./images/firebase.webp",
 	"highlights": [
-		"Implemented complete design systems.",
-		"Worked inside proffesional-level projects.",
-		"Made extensive use of components all around the project.",
-		"Realized complex designs and fluent animations.",
+		"Implemented Firebase Authentication for Web, android and iOS.",
+		"Integrated Firebase Messaging.",
+		"Played with offline data persistence.",
 		"Worked with local and push notifications on both iOS and Android."
 	]
 }

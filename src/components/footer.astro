@@ -1,11 +1,36 @@
 ---
-import { FiExternalLink } from "react-icons/fi";
+import { FiExternalLink, FiGithub, FiLinkedin } from "react-icons/fi";
+import { MdOutlineMail } from "react-icons/md";
 ---
 
-<footer class="flex flex-1 w-full justify-center items-center bg-primary">
+<footer class="flex flex-1 w-full justify-center items-center bg-primary pt-xl">
 	<div
 		class="flex max-w-screen-xl w-full flex-col sm:flex-row items-center gap-sm justify-between px-md py-md text-white"
 	>
+		<ul class="flex pb-xl sm:hidden space-x-xl text-md sm:text-xl">
+			<li>
+				<a
+					href="https://github.com/eloy98g"
+					class="hover:underline"
+					target="_blank"><FiGithub size={24} /></a
+				>
+			</li>
+			<li>
+				<a
+					href="https://www.linkedin.com/in/eloy-gomez-garcia-464125201/"
+					target="_blank"
+					class="hover:underline"><FiLinkedin size={24} /></a
+				>
+			</li>
+			<li>
+				<a
+					href="mailto:eloygomez.contact@gmail.com"
+					class="hover:underline"
+					target="_blank"><MdOutlineMail size={24} /></a
+				>
+			</li>
+		</ul>
+
 		<a
 			href=" https://github.com/eloy98g/Portfolio"
 			class="hover:underline"

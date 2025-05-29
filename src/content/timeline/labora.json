@@ -1,7 +1,7 @@
 {
 	"gid": 3,
 	"title": "Labora",
-	"image": "",
+	"image": "./images/labora.webp",
 	"label": "2021",
 	"subtitle": "Frontend Developer",
 	"highlights": [

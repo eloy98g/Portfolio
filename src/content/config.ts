@@ -1,6 +1,7 @@
 import { defineCollection, z } from "astro:content";
 
 const resume = defineCollection({
+	type: "data",
 	schema: z.object({
 		gid: z.number(),
 		title: z.string(),
@@ -10,6 +11,7 @@ const resume = defineCollection({
 });
 
 const timeline = defineCollection({
+	type: "data",
 	schema: z.object({
 		gid: z.number(),
 		title: z.string(),

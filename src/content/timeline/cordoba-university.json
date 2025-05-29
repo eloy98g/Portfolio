@@ -2,7 +2,8 @@
 	"gid": 1,
 	"title": "Córdoba University",
 	"label": "2016 - 2021",
-	"image": "../../../assets/icons/uco.jpeg",
+	"image": "./images/uco.webp",
+	"subtitle": "Student",
 	"highlights": [
 		"Learned the basics of Software Engineering, client analysis and project management.",
 		"Experienced low level programming with C and C++.",

@@ -1,0 +1,49 @@
+---
+import { getCollection } from "astro:content";
+
+const resume = await getCollection("resume");
+---
+
+<section id="resume" class="flex flex-col items-center justify-center gap-xl">
+	<h1 class="text-4xl font-extrabold">📝 Resume</h1>
+	<div
+		class="rounded-2xl bg-secondary p-md flex flex-col item-center justify-center gap-md font-thin w-full"
+	>
+		{
+			resume
+				.sort((a, b) => a.data.gid - b.data.gid)
+				.map((item, index) => {
+					const { title, image, highlights } = item.data;
+
+					return (
+						<article
+							class:list={[
+								"flex-col flex gap-md pb-sm",
+								{
+									" border-b-[1px] border-light-grey":
+										index !== resume.length - 1,
+								},
+							]}
+						>
+							<div class="flex flew-row items-center">
+								<img
+									transition:name={`img-${title}`}
+									class="mr-5 size-16 rounded-full"
+									src={`/${image}`}
+									alt={title}
+								/>
+								<h1 class="text-xl sm:text-4xl font-extrabold">{title}</h1>
+							</div>
+							<div class="flex flex-col gap-xs">
+								{highlights.map((highlight) => {
+									return (
+										<p class="text-md sm:text-xl font-thin">➤ {highlight}</p>
+									);
+								})}
+							</div>
+						</article>
+					);
+				})
+		}
+	</div>
+</section>
