@@ -1,0 +1,145 @@
+---
+import { ClientRouter } from "astro:transitions";
+import Footer from "../components/footer.astro";
+import Header from "../components/header.astro";
+
+interface Props {
+	title: string;
+	description?: string;
+	image?: string;
+	type?: "website" | "article" | "profile";
+	canonicalURL?: string;
+	keywords?: string;
+}
+
+const {
+	title,
+	description = "Portfolio personal de Eloy Gómez García - Desarrollador Frontend especializado en React, TypeScript y tecnologías web modernas.",
+	image = "/images/profile.webp",
+	type = "website",
+	canonicalURL,
+	keywords = "web, desarrollador, developer, react native, astro, mobile, development, frontend, React, TypeScript, JavaScript, portfolio, js, ts, eloy gomez, eloygomez, eloygomez.dev, eloygomezgarcia, eloy gomez garcia",
+} = Astro.props;
+
+const canonical = canonicalURL || new URL(Astro.url.pathname, Astro.site).href;
+
+const fullTitle =
+	title === "Eloy Gómez García" ? title : `${title} | Eloy Gómez García`;
+
+const ogImage = new URL(image, Astro.site).href;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- SEO Básico -->
+		<title>{fullTitle}</title>
+		<meta name="description" content={description} />
+		<meta name="keywords" content={keywords} />
+		<meta name="author" content="Eloy Gómez García" />
+		<link rel="canonical" href={canonical} />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content={type} />
+		<meta property="og:url" content={canonical} />
+		<meta property="og:title" content={fullTitle} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={ogImage} />
+		<meta property="og:site_name" content="Eloy Gómez García - Portfolio" />
+		<meta property="og:locale" content="es_ES" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={canonical} />
+		<meta property="twitter:title" content={fullTitle} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content={ogImage} />
+
+		<!-- Favicon y iconos -->
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<link rel="apple-touch-icon" href="/favicon.png" />
+		<meta name="theme-color" content="#1D1C1E" />
+
+		<!-- Robots -->
+		<meta name="robots" content="index, follow" />
+
+		<!-- Schema.org JSON-LD -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Person",
+				"name": "Eloy Gómez García",
+				"url": "https://eloygomez.dev/",
+				"image": "https://eloygomez.dev/images/profile.webp",
+				"jobTitle": "Desarrollador Frontend",
+				"worksFor": {
+					"@type": "Organization",
+					"name": "Freelance"
+				},
+				"alumniOf": "Tu Universidad",
+				"knowsAbout": [
+					"JavaScript",
+					"React",
+					"TypeScript",
+					"Frontend Development",
+					"Astro"
+				],
+				"sameAs": [
+					"https://github.com/eloy98g",
+					"https://www.linkedin.com/in/eloy-gomez-garcia-464125201/",
+					"mailto:eloygomez.contact@gmail.com"
+				]
+			}
+		</script>
+
+		<!-- Preconnect para performance -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+			rel="stylesheet"
+		/>
+
+		<ClientRouter />
+	</head>
+	<body class="flex-1 flex-col">
+		<Header />
+		<div class="flex pt-3xl w-full flex-1 justify-center items-center">
+			<main class="flex-1 flex max-w-screen-xl px-md flex-col gap-3xl">
+				<slot />
+			</main>
+		</div>
+		<Footer />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		scroll-behavior: smooth;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+
+	html {
+		font-family: "Nunito", sans-serif;
+		background: theme("colors.primary");
+		color: #fff;
+	}
+
+	#about,
+	#resume,
+	#timeline,
+	#contact {
+		scroll-margin-top: 100px;
+	}
+</style>

@@ -1,0 +1,11 @@
+{
+	"gid": 3,
+	"title": "Firebase",
+	"image": "./images/firebase.webp",
+	"highlights": [
+		"Implemented Firebase Authentication for Web, android and iOS.",
+		"Integrated Firebase Messaging.",
+		"Played with offline data persistence.",
+		"Worked with local and push notifications on both iOS and Android."
+	]
+}

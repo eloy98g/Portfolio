@@ -1,0 +1,15 @@
+{
+	"gid": 4,
+	"title": "Gopick",
+	"subtitle": "Software Developer",
+	"image": "./images/gopick.webp",
+	"label": "2021 - 2024",
+	"highlights": [
+		"Developed cross-platforms applications for mobile and Web using React Native.",
+		"Implemented complex designs and fluent animations.",
+		"Worked hand-by-hand with design people when developing new features.",
+		"Released mobile app to both App Store and Google Play.",
+		"Managed app releases through production channels.",
+		"Used Firebase for Authentication and Messaging."
+	]
+}
