@@ -23,9 +23,6 @@ const {
 
 const canonical = canonicalURL || new URL(Astro.url.pathname, Astro.site).href;
 
-const fullTitle =
-	title === "Eloy Gómez García" ? title : `${title} | Eloy Gómez García`;
-
 const ogImage = new URL(image, Astro.site).href;
 ---
 
@@ -35,8 +32,8 @@ const ogImage = new URL(image, Astro.site).href;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- SEO Básico -->
-		<title>{fullTitle}</title>
+		<!-- Basic SEO -->
+		<title>{title}</title>
 		<meta name="description" content={description} />
 		<meta name="keywords" content={keywords} />
 		<meta name="author" content="Eloy Gómez García" />
@@ -45,7 +42,7 @@ const ogImage = new URL(image, Astro.site).href;
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content={type} />
 		<meta property="og:url" content={canonical} />
-		<meta property="og:title" content={fullTitle} />
+		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:image" content={ogImage} />
 		<meta property="og:site_name" content="Eloy Gómez García - Portfolio" />
@@ -54,7 +51,7 @@ const ogImage = new URL(image, Astro.site).href;
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="twitter:url" content={canonical} />
-		<meta property="twitter:title" content={fullTitle} />
+		<meta property="twitter:title" content={title} />
 		<meta property="twitter:description" content={description} />
 		<meta property="twitter:image" content={ogImage} />
 
@@ -95,7 +92,7 @@ const ogImage = new URL(image, Astro.site).href;
 			}
 		</script>
 
-		<!-- Preconnect para performance -->
+		<!-- Preconnect for performance -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
